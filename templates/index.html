@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Churn Prediction</title>
+  </head>
+
+<body>
+ <div class="login">
+	<h1 align="center">Bank Customer Churn Prediction</h1>
+	<body background="https://fitsmallbusiness.com/wp-content/uploads/2018/03/Convert-Your-FSBO-Leads-with-These-2-Free-Scripts-that-Actually-Work.png">
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="http://localhost:5000/" method="POST">
+	<div align="center" >
+    	<br><input type="text" align="center" name="Credit Score" placeholder="Credit Score" required="required" size="50"/><br>
+        
+        <br><input type="text" name="Age" placeholder="Age" required="required" size="50"/><br>
+		<br><input type="text" name="Tenure" placeholder="Tenure" required="required" size="50"/><br>
+		<br><input type="text" name="Balance" placeholder="Balance" required="required" size="50" /><br>
+		<br><input type="text" name="NumOfProducts" placeholder="NumOfProducts" required="required" size="50" /><br>
+        <br><input type="text" name="HasCrCard" placeholder="HasCrCard" required="required" size="50" /><br>
+		<br><input type="text" name="IsActiveMember" placeholder="IsActiveMember" required="required" size="50"/><br>
+		<br><input type="text" name="EstimatedSalary" placeholder="EstimatedSalary" required="required" size="50"/><br>
+	
+
+       <br> <button type="submit" class="btn btn-primary btn-block btn-large">Predict customer churn</button><br>
+	   </div>
+    </form>
+	
+   <br>
+   <br>
+   <div class="row"> 
+			<div class="col-sm-9">
+			<textarea class="form-control" rows="2" id="comment"  rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			</div>
+		</div>
+
+ </div>
